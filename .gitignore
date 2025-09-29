@@ -36,7 +36,6 @@ venv.bak/
 
 # SageMaker
 .sagemaker/
-sagemaker-*/
 model.tar.gz
 *.tar.gz
 

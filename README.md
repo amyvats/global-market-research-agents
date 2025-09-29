@@ -39,24 +39,32 @@ This project provides intelligent market research agents that can analyze busine
 ## 📁 Project Structure
 
 ```
-├── sagemaker-notebooks/           # Main Jupyter notebooks
-│   ├── 01_bedrock_setup_and_testing.ipynb
-│   ├── 02_market_research_agent.ipynb
-│   ├── 03_risk_assessment_agent.ipynb
-│   ├── 04_multi_agent_orchestration.ipynb
-│   ├── 05_rag_enhanced_market_research.ipynb
-│   ├── 06_agent_testing_guide.ipynb
-│   └── 07_chatbot_interface.ipynb
+├── sagemaker-notebooks/           # Jupyter notebooks
+│   ├── market-research-agents/    # Main market research notebooks
+│   │   ├── 01_bedrock_setup_and_testing.ipynb
+│   │   ├── 02_market_research_agent.ipynb
+│   │   ├── 03_risk_assessment_agent.ipynb
+│   │   ├── 04_multi_agent_orchestration.ipynb
+│   │   ├── 05_rag_enhanced_market_research.ipynb
+│   │   ├── 06_agent_testing_guide.ipynb
+│   │   └── 07_chatbot_interface.ipynb
+│   └── prompt-engineering/        # Prompt engineering tutorials
+│       ├── 01_prompt_engineering_fundamentals.ipynb
+│       ├── 02_core_techniques.ipynb
+│       └── 03_advanced_techniques_and_security.ipynb
+├── api/                           # Production REST API
+│   ├── agents/                    # Agent implementations
+│   │   ├── market_research_agent.py
+│   │   ├── risk_assessment_agent.py
+│   │   └── multi_agent_orchestrator.py
+│   ├── main.py                    # FastAPI server
+│   ├── client_example.py          # API client example
+│   └── requirements.txt           # API dependencies
 ├── docs/                          # Documentation
 │   ├── AWS_SETUP.md              # AWS setup instructions
-│   ├── QUICK_START.md            # Quick start guide
-│   └── USER_GUIDE.md             # Detailed user guide
-├── scripts/                       # Setup and utility scripts
-│   ├── setup_sagemaker.py
-│   └── setup_rag_infrastructure.py
-├── agents/                        # Agent implementations
-│   └── risk_assessment_agent.py
-├── workflows/                     # Workflow definitions
+│   ├── USER_GUIDE.md             # Detailed user guide
+│   ├── PROJECT_OVERVIEW.md       # Project overview
+│   └── AWS_DEPLOYMENT_GUIDE.md   # Deployment guide
 └── requirements.txt               # Python dependencies
 ```
 

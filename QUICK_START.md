@@ -33,7 +33,7 @@ Get up and running with the Global Market Research Agents in under 30 minutes.
 1. **Wait for notebook status**: `InService` (takes 2-3 minutes)
 2. Click **Open Jupyter** 
 3. **Upload** the entire `sagemaker-notebooks/` folder
-4. **Navigate** to the uploaded folder
+4. **Navigate** to `sagemaker-notebooks/market-research-agents/`
 
 ### Step 3: Initialize System (2 minutes)
 
